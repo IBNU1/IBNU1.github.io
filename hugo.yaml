@@ -1,4 +1,4 @@
-baseURL: "https://YOURUSERNAME.github.io/"
+baseURL: "https://IBNU1.github.io/"
 title: My Website
 theme: PaperMod
 languageCode: en-us
@@ -15,7 +15,7 @@ params:
     Content: "Welcome — replace this text with your intro."
   socialIcons:
     - name: github
-      url: "https://github.com/YOURUSERNAME"
+      url: "https://github.com/IBNU1"
 
 menu:
   main:
