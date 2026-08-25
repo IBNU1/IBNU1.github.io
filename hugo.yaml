@@ -1,0 +1,29 @@
+baseURL: "https://YOURUSERNAME.github.io/"
+title: My Website
+theme: PaperMod
+languageCode: en-us
+
+pagination:
+  pagerSize: 5
+
+enableRobotsTXT: true
+buildDrafts: false
+
+params:
+  homeInfoParams:
+    Title: "Hi there 👋"
+    Content: "Welcome — replace this text with your intro."
+  socialIcons:
+    - name: github
+      url: "https://github.com/YOURUSERNAME"
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 20
