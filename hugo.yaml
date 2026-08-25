@@ -1,29 +1,99 @@
 baseURL: "https://IBNU1.github.io/"
-title: My Website
+title: "Zubin Jain"
 theme: PaperMod
 languageCode: en-us
+defaultContentLanguage: en
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
 
 pagination:
   pagerSize: 5
 
-enableRobotsTXT: true
-buildDrafts: false
+minify:
+  disableXML: true
+  minifyOutput: true
 
 params:
-  homeInfoParams:
-    Title: "Hi there 👋"
-    Content: "Welcome — replace this text with your intro."
+  env: production
+  description: "Zubin Jain — ASIC Engineer, Agentic EDA & Workflows, Science Fiction Magazine Editor, Writer."
+  author: Zubin Jain
+  defaultTheme: auto
+  ShowShareButtons: false
+  ShowReadingTime: true
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  TocOpen: false
+  disableThemeToggle: false
+  disableScrollToTop: false
+
+  profileMode:
+    enabled: true
+    title: "Zubin Jain"
+    subtitle: "ASIC Engineer · Agentic EDA & Workflows · Science Fiction Magazine Editor · Writer"
+    imageUrl: "img/profile.jpg"
+    imageTitle: "Zubin Jain"
+    imageWidth: 160
+    imageHeight: 160
+    buttons:
+      - name: Technical Blog
+        url: /technical-blog/
+      - name: Sengkang Sci-Fi Journal
+        url: https://sengkangsfj.com
+      - name: Resume
+        url: /files/Zubin_Jain_Resume.pdf
+
   socialIcons:
+    - name: email
+      url: "mailto:zubingr8@gmail.com"
+    - name: x
+      url: "https://x.com/zuckerbinjain"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/zubin-jain"
     - name: github
       url: "https://github.com/IBNU1"
+
+  assets:
+    disableHLJS: true
+    favicon: "img/profile.jpg"
 
 menu:
   main:
     - identifier: about
+      pre: "👤"
       name: About
       url: /about/
       weight: 10
-    - identifier: posts
-      name: Posts
-      url: /posts/
+    - identifier: technical-blog
+      pre: "💻"
+      name: Technical Blog
+      url: /technical-blog/
       weight: 20
+    - identifier: blog
+      pre: "✍️"
+      name: Blog
+      url: https://notesforstayingsane.substack.com
+      weight: 30
+      params:
+        external: true
+        rel: "noopener noreferrer"
+    - identifier: resume
+      pre: "📄"
+      name: Resume
+      url: /files/Zubin_Jain_Resume.pdf
+      weight: 40
+    - identifier: bookclubs
+      pre: "📚"
+      name: Bookclubs
+      url: /bookclubs/
+      weight: 50
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
