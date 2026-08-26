@@ -9,6 +9,10 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
+# Keep URL casing as written (menu URLs are lowercased otherwise, which 404s
+# the resume PDF on GitHub Pages since its paths are case-sensitive)
+disablePathToLower: true
+
 pagination:
   pagerSize: 5
 
